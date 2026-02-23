@@ -1,0 +1,21 @@
+<?php
+
+// The Millennial: Find everyone born between 1990 and 1996.
+
+$birthdays = [
+    "1990-12-23",
+    "1991-06-12",
+    "1993-06-28",
+    "1993-03-26",
+    "1995-07-14",
+    "1995-12-14",
+    "1992-09-23",
+    "1992-05-19",
+    "1994-12-19",
+    "1992-03-04"
+];
+
+echo "Millennials (1990 - 1996): <br><br>";
+
+foreach ($birthdays as $index => $dob) {
+    $year = date("Y", strtotime($dob));
